@@ -31,3 +31,9 @@ test: object;
 ```ts
 HELLO: string;
 ```
+
+###### test.Hello World
+
+```ts
+Hello World: string;
+```

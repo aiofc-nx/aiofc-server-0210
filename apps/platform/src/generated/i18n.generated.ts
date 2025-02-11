@@ -7,6 +7,7 @@ import { Path } from "nestjs-i18n";
 export type I18nTranslations = {
     "test": {
         "HELLO": string;
+        "Hello World": string;
     };
 };
 /* prettier-ignore */

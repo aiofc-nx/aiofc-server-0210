@@ -1,19 +1,21 @@
 import { join } from 'path';
 
-import { ConfigModule } from '@aiofc/config';
-// import { LoggerModule } from '@aiofc/pino-logger';
+import { ConfigModule, ConfigService } from '@aiofc/config';
 import { setupLoggerModule } from '@aiofc/pino-logger';
 import { MiddlewareConsumer, Module } from '@nestjs/common';
 
 import { AppController } from './app/app.controller';
 import { AppService } from './app/app.service';
 import { setupClsModule } from './boostrap/cls-setup';
+import { setupI18nModule } from './boostrap/i18n-setup';
 import { GlobalMiddleware } from './common/middleware/global.middleware';
+
 @Module({
   imports: [
     ConfigModule.forRoot(join(__dirname, '')),
     setupClsModule(),
     setupLoggerModule(),
+    setupI18nModule(),
   ],
   controllers: [AppController],
   providers: [AppService],

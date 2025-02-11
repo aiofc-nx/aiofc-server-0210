@@ -1,4 +1,4 @@
-[@aiofc/source](../../../../../../index.md) / [apps/platform/src/config/config.service](../index.md) / ConfigService
+[@aiofc/source](../../../../../../index.md) / [packages/config/src/lib/config.service](../index.md) / ConfigService
 
 # Class: ConfigService
 
@@ -14,15 +14,21 @@ ConfigService 类
 
 ## Extends
 
-- [`ZodEnv`](../../../../../../packages/zod-env/src/lib/zod-env/classes/ZodEnv.md)\<[`EnvValidatedConfig`](../../env-schema/index.md#envvalidatedconfig)\>
+- [`ZodEnv`](../../../../../zod-env/src/lib/zod-env/classes/ZodEnv.md)\<[`EnvValidatedConfig`](../../env-schema/index.md#envvalidatedconfig)\>
 
 ## Constructors
 
 ### new ConfigService()
 
 ```ts
-new ConfigService(): ConfigService
+new ConfigService(configDir): ConfigService
 ```
+
+#### Parameters
+
+##### configDir
+
+`string`
 
 #### Returns
 
@@ -30,7 +36,7 @@ new ConfigService(): ConfigService
 
 #### Overrides
 
-[`ZodEnv`](../../../../../../packages/zod-env/src/lib/zod-env/classes/ZodEnv.md).[`constructor`](../../../../../../packages/zod-env/src/lib/zod-env/classes/ZodEnv.md#constructors)
+[`ZodEnv`](../../../../../zod-env/src/lib/zod-env/classes/ZodEnv.md).[`constructor`](../../../../../zod-env/src/lib/zod-env/classes/ZodEnv.md#constructors)
 
 ## Accessors
 
@@ -41,7 +47,7 @@ new ConfigService(): ConfigService
 ```ts
 get app(): Readonly<{
   globalPrefix: string;
-  NODE_ENV: "development" | "production" | "test";
+  NODE_ENV: "test" | "development" | "production";
   port: number;
 }>
 ```
@@ -50,7 +56,7 @@ get app(): Readonly<{
 
 `Readonly`\<\{
   `globalPrefix`: `string`;
-  `NODE_ENV`: `"development"` \| `"production"` \| `"test"`;
+  `NODE_ENV`: `"test"` \| `"development"` \| `"production"`;
   `port`: `number`;
  \}\>
 
@@ -74,7 +80,7 @@ get config(): T
 
 #### Inherited from
 
-[`ZodEnv`](../../../../../../packages/zod-env/src/lib/zod-env/classes/ZodEnv.md).[`config`](../../../../../../packages/zod-env/src/lib/zod-env/classes/ZodEnv.md#config)
+[`ZodEnv`](../../../../../zod-env/src/lib/zod-env/classes/ZodEnv.md).[`config`](../../../../../zod-env/src/lib/zod-env/classes/ZodEnv.md#config)
 
 ***
 

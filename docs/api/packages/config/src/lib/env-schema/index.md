@@ -1,6 +1,6 @@
-[@aiofc/source](../../../../../index.md) / apps/platform/src/config/env-schema
+[@aiofc/source](../../../../../index.md) / packages/config/src/lib/env-schema
 
-# apps/platform/src/config/env-schema
+# packages/config/src/lib/env-schema
 
 ## Type Aliases
 
@@ -22,11 +22,11 @@ const EnvSchema: ZodObject<{
      port: ZodDefault<ZodNumber>;
     }, "strip", ZodTypeAny, {
      globalPrefix: string;
-     NODE_ENV: "development" | "production" | "test";
+     NODE_ENV: "test" | "development" | "production";
      port: number;
     }, {
      globalPrefix: string;
-     NODE_ENV: "development" | "production" | "test";
+     NODE_ENV: "test" | "development" | "production";
      port: number;
     }>;
   logger: ZodObject<{
@@ -45,7 +45,7 @@ const EnvSchema: ZodObject<{
  }, "strip", ZodTypeAny, {
   app: {
      globalPrefix: string;
-     NODE_ENV: "development" | "production" | "test";
+     NODE_ENV: "test" | "development" | "production";
      port: number;
     };
   logger: {
@@ -56,7 +56,7 @@ const EnvSchema: ZodObject<{
  }, {
   app: {
      globalPrefix: string;
-     NODE_ENV: "development" | "production" | "test";
+     NODE_ENV: "test" | "development" | "production";
      port: number;
     };
   logger: {

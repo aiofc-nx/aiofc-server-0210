@@ -38,6 +38,8 @@ async function bootstrap() {
   app.register(fastifyHelmet, {});
   // 注册ShutdownHooks
   app.enableShutdownHooks();
+  // 启用跨域资源共享
+  app.enableCors();
   // 启动应用
   // if (config.app.globalPrefix) {
   //   app.setGlobalPrefix(config.app.globalPrefix);

@@ -44,7 +44,7 @@ console.log(config.host);    // IDE会提供自动完成
 
 ## Extended by
 
-- [`ConfigService`](../../../../../../apps/platform/src/config/config.service/classes/ConfigService.md)
+- [`ConfigService`](../../../../../config/src/lib/config.service/classes/ConfigService.md)
 
 ## Type Parameters
 

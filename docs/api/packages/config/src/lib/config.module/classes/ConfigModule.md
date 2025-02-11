@@ -1,4 +1,4 @@
-[@aiofc/source](../../../../../../index.md) / [apps/platform/src/config/config.module](../index.md) / ConfigModule
+[@aiofc/source](../../../../../../index.md) / [packages/config/src/lib/config.module](../index.md) / ConfigModule
 
 # Class: ConfigModule
 
@@ -20,3 +20,21 @@ new ConfigModule(): ConfigModule
 #### Returns
 
 [`ConfigModule`](ConfigModule.md)
+
+## Methods
+
+### forRoot()
+
+```ts
+static forRoot(configDir): DynamicModule
+```
+
+#### Parameters
+
+##### configDir
+
+`string`
+
+#### Returns
+
+`DynamicModule`
