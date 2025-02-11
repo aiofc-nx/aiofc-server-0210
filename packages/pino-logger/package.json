@@ -1,0 +1,16 @@
+{
+  "name": "@aiofc/pino-logger",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "nestjs-pino": "^4.3.0",
+    "@nestjs/common": "^11.0.8",
+    "rxjs": "^7.8.0",
+    "pino-http": "^10.4.0",
+    "pino": "^9.6.0",
+    "@aiofc/config": "workspace:*",
+    "nestjs-cls": "^5.2.0"
+  }
+}
