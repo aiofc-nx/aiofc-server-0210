@@ -1,14 +1,14 @@
 import { join } from 'path';
 
-import { ConfigModule, ConfigService } from '@aiofc/config';
+import { ConfigModule } from '@aiofc/config';
 import { setupLoggerModule } from '@aiofc/pino-logger';
 import { MiddlewareConsumer, Module } from '@nestjs/common';
 
-import { AppController } from './app/app.controller';
-import { AppService } from './app/app.service';
-import { setupClsModule } from './boostrap/cls-setup';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 import { setupI18nModule } from './boostrap/i18n-setup';
 import { GlobalMiddleware } from './common/middleware/global.middleware';
+import { setupClsModule } from './infrastructure/cache/cls-setup';
 
 @Module({
   imports: [

@@ -36,6 +36,24 @@ async function bootstrap() {
   applyExpressCompatibility(fastifyInstance);
   // 注册Helmet
   app.register(fastifyHelmet, {});
+  // 注册 Helmet 安全中间件
+  // @description 提供基本的安全防护，包括 XSS、CSP、HSTS 等
+  // @link https://github.com/helmetjs/helmet
+  // @link https://github.com/fastify/fastify-helmet
+  // 本地环境不开启,具体配置请参考官方文档
+  // await registerHelmet(fastifyApp.getInstance(), {
+  //   contentSecurityPolicy: isDevEnvironment
+  //     ? false
+  //     : {
+  //         directives: {
+  //           defaultSrc: ["'self'"],
+  //           styleSrc: ["'self'", "'unsafe-inline'", 'https:'],
+  //           scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", 'https:'],
+  //           imgSrc: ["'self'", 'data:', 'https:'],
+  //           connectSrc: ["'self'", 'https:', 'wss:'],
+  //         },
+  //       },
+  // });
   // 注册ShutdownHooks
   app.enableShutdownHooks();
   // 启用跨域资源共享

@@ -17,6 +17,16 @@ export const EnvSchema = z.object({
     prettyLogs: z.boolean().default(false),
     defaultLevel: z.string().default('info'),
   }),
+  /**
+   * 数据库配置部分
+   */
+  database: z.object({
+    user: z.string(), // 数据库用户名
+    password: z.string(), // 数据库密码
+    host: z.string(), // 数据库主机地址
+    port: z.coerce.number().default(5432),
+    name: z.string(), // 数据库名称
+  }),
 });
 
 export type EnvValidatedConfig = z.infer<typeof EnvSchema>;

@@ -1,8 +1,8 @@
 import { relations } from 'drizzle-orm';
 import { text, varchar, timestamp } from 'drizzle-orm/pg-core';
 
-import { createTrackedTable } from './base.schema';
-import { tenantTable } from './tenant.schema';
+import { createTrackedTable } from '../base.schema';
+import { tenantTable } from '../tenant/tenant.schema';
 
 /**
  * 用户表 schema 定义

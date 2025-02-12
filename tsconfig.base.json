@@ -14,7 +14,6 @@
     "removeComments": true,
     "declarationMap": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "paths": {
       "@aiofc/config": ["packages/config/src/index.ts"],
       "@aiofc/pino-logger": ["packages/pino-logger/src/index.ts"],

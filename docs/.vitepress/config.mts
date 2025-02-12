@@ -11,6 +11,7 @@ export default defineConfig({
       { text: 'Technologies', link: '/technologies/pnpm' },
       { text: 'Reference', link: '/reference' },
       { text: 'API', link: '/api' },
+      { text: 'DDD', link: '/ddd/ddd-1' },
     ],
 
     sidebar: [

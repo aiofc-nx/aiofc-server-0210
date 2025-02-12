@@ -32,6 +32,10 @@ export class ConfigService extends ZodEnv<EnvValidatedConfig> {
   get logger() {
     return Object.freeze({ ...this.config.logger });
   }
+
+  get database() {
+    return Object.freeze({ ...this.config.database });
+  }
 }
 
 // export interface Config {

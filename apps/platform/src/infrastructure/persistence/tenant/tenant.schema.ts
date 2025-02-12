@@ -1,10 +1,12 @@
 import { relations } from 'drizzle-orm';
 import { text, varchar } from 'drizzle-orm/pg-core';
 
-import { TenantStatus, TenantCategory } from '../../common/enums/tenant.enum';
-
-import { createTrackedTable } from './base.schema';
-import { userTable } from './user.schema';
+import {
+  TenantStatus,
+  TenantCategory,
+} from '../../../common/enums/tenant.enum';
+import { createTrackedTable } from '../base.schema';
+import { userTable } from '../user/user.schema';
 
 export const tenantTable = createTrackedTable('tenant', {
   // 租户名称：用于显示和识别租户的友好名称
